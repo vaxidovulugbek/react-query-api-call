@@ -1,10 +1,9 @@
 import { useMutation } from "@tanstack/react-query";
-import { apiHelpers } from "../services/utils/apiHelpers";
 import { httpClient } from "../services/api";
 
 // POST so'rovi yuboradigan mutatsiya funksiyasini yozing
 const postFn = async (data) => {
-  const { data: responseData } = await httpClient.post('/', data);
+  const { data: responseData } = await httpClient.post('posts/', data);
   return responseData;
 };
 

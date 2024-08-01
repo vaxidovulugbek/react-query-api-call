@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { usePostData } from "./hooks/usePostData";
+import { usePostData } from "../hooks/usePostData";
 
 function PostRequest() {
   const [postData, setPostData] = useState({
